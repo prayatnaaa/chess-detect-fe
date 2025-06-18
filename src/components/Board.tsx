@@ -6,11 +6,7 @@ interface BoardProps {
 }
 
 const Board: React.FC<BoardProps> = ({ curPosition }) => {
-  return (
-    <div className="chessboard">
-      <Chessboard boardWidth={700} position={curPosition} />
-    </div>
-  );
+  return <Chessboard boardWidth={560} position={curPosition} />;
 };
 
 export default Board;
